@@ -11,18 +11,25 @@
 
 <body>
   <!-- main logo / nav -->
+  <div class="gridContainer">
   <header>
-    <div class="header">
-     <h1>Nicola's portfolio</h1>
-      <nav>     <!-- This is the header navigation with the links to the main sections -->
-        <li class="headerRight">
-          <a href="#about"> About Me </a>
-          <a href="#work"> Work </a>
-          <a href="#contact"> Contacts </a>
-          <a href="#resume"> Resume </a>
-        </li>
+       <nav>     <!-- This is the header navigation with the links to the main sections -->
+        <ul>
+          <li><h1 class="backColor">   NICOLA'S PORTFOLIO</h1></li>
+          <li>
+             <a href="#aboutTitle"> About Me </a> 
+          </li>
+          <li>
+             <a href="workTitle"> Work </a>
+          </li>
+          <li>
+             <a href="#contactTitle"> Contacts </a>
+          </li>
+          <li>
+             <a href="https://www.linkedin.com/in/nicola-sedda-885717298/"> Resume </a>
+          </li>
+        </ul>
        </nav>
-    </div>
   </header>
 
   <!-- hero banner -->
@@ -34,22 +41,31 @@
 
   <main class="pageWrapper">
     <!-- about me -->
-    <section class="aboutSection" id="about">
-      <h2>About Me</h2>
+    <section class="aboutSection">
+      <h2 id="aboutTitle">About Me</h2>
+      <p id="aboutText"> I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding </p>
     </section>
 
     <!-- portfolio container -->
-    <section class="workSection" id="work">
-      <h2>Work</h2>
+    <section class="workSection">
+      <h2 id="workTitle">Work</h2>
+      <span></span>
+      <article id="project1"> Project 1</article>
+      <article id="project2"> Project 2</article>
+      <article id="project3"> Project 3</article>
+      <article id="project4"> Project 4</article>
+      <article id="project5"> Project 5</article>
     </section>
 
     <!-- contact -->
-    <section class="contactSection" id="contact">
-      <h2>Contact Me</h2>
+    <section class="contactSection">
+      <h2 id="contactTitle">Contact Me</h2>
+      <p id="phoneNum">Phone Number: 123456789</p>
+      <a id="emailAdd">Email: nico@websitewow.com</a>
     </section>
 
   </main>
-
+</div>
 </body>
 
 </html>
