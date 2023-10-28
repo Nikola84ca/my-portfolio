@@ -11,13 +11,12 @@ body {
   
 }
 
-
 a{
   color: grey;
 }
 
 
-h1, h2, h3, h4 {
+h1, h3, h4 {
   color: grey;
 }
 header {
@@ -49,3 +48,29 @@ margin-right: auto;
 margin-left: 10px;
 }
 
+
+.heroBanner {
+  display: flex;
+  justify-content:last baseline;
+  grid-area: heroBanner;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("images/coding-background-2.gif");
+  background-size: 100%;
+  background-position: center;
+}
+
+
+h2 {
+  color: white;
+}
+
+#heroTitle {
+  font-size:20px;
+  margin-top: 180px;
+  margin-left: 800px;
+  margin-bottom: 25px;
+  background-color: rgb(62, 62, 110);
+  text-justify: center;
+}
