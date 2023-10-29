@@ -165,15 +165,17 @@ text-align: end;
   width: 70%;
   align-items: start;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 #project1 {
   object-fit: contain;
-  height: 250px;
-  width: 420px;
+  height: 320px;
+  width: 900px;
   background-image: url(images/02-portfolio-1.jpg);
   background-size: cover;
   position: relative;
+  margin-left: 100px;
   
   
 }
@@ -218,36 +220,42 @@ text-align: end;
 
 #project2 {
   
-  height: 100px;
-  width: 300px;
+  height: 120px;
+  width: 414px;
   background-image: url(images/02-portfolio-2.jpg);
   background-size: 100%;
   object-fit: contain;
   background-size: 100%;
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 #project3 {
   object-fit: contain;
-  height: 100px;
-  width: 420px;
+  height: 120px;
+  width: 414px;
   background-image: url(images/02-portfolio-3.jpg);
   background-size: 100%;
+  margin-top: 10px;
   }
 
 #project4 {
   object-fit: contain;
-  height: 100px;
-  width: 420px;
+  height: 120px;
+  width: 414px;
   background-image: url(images/02-portfolio-1.jpg);
   background-size: 100%;
+  margin-top: 10px;
+  margin-left: 100px;
   }
 
 #project5 {
   object-fit: contain;
-  height: 100px;
-  width: 420px;
+  height: 120px;
+  width: 414px;
   background-image: url(images/02-portfolio-1.jpg);
   background-size: 100%;
+  margin-top: 10px;
   }
 
 
@@ -259,8 +267,7 @@ text-align: end;
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  
-    margin-top: 50px;
+  margin-top: 200px;
   
 }
 
