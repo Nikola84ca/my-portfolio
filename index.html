@@ -11,7 +11,6 @@
 
 <body>
   <!-- main logo / nav -->
-  <div class="gridContainer">
   <header>
        <nav>     <!-- This is the header navigation with the links to the main sections -->
         <ul>
@@ -20,7 +19,7 @@
              <a href="#aboutTitle"> About Me </a> 
           </li>
           <li>
-             <a href="workTitle"> Work </a>
+             <a href="#workTitle"> Work </a>
           </li>
           <li>
              <a href="#contactTitle"> Contacts </a>
@@ -32,42 +31,62 @@
        </nav>
   </header>
 
+     <!-- hero banner -->
+     <section class="heroBanner">
+      <div id="heroTitle">
+        <h2>CODING TO MAKE A DIFFERENCE!</h2>
+      </div>
+    </section>
 
   <main class="pageWrapper">
 
-      <!-- hero banner -->
-  <section class="heroBanner">
-    <div id="heroTitle">
-      <h2>CODING TO MAKE A DIFFERENCE!</h2>
-    </div>
-  </section>
-
-    <!-- about me -->
+ 
+   <!-- about me -->
     <section class="aboutSection">
       <h2 id="aboutTitle">About Me</h2>
-      <p id="aboutText"> I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding I love coding </p>
+      <p id="aboutText"> Born and raised in Italy, I moved to the UK in 2015. I have always been interested in new technologies and IT, as I studied IT in my A levels back in Italy. After 5 years working in content management for a website, I decided to make the step of learning Front- End Development thanks to the EdX course, and on this page I want to showcase not only my progress as a student but also a journey that hopefully will lead to a new exciting projects in this field.
+      </p>
     </section>
 
     <!-- portfolio container -->
     <section class="workSection">
       <h2 id="workTitle">Work</h2>
-      <span></span>
-      <article id="project1"> Project 1</article>
-      <article id="project2"> Project 2</article>
-      <article id="project3"> Project 3</article>
-      <article id="project4"> Project 4</article>
-      <article id="project5"> Project 5</article>
+      <section class="projects">
+      <article id="project1">
+        <title id="label">
+          <a href="https://nikola84ca.github.io/Horiseon-SEO-Project" >Horiseon Project</a>
+          <h5>Accessibility and SEO optimization</h5>
+        </title>
+      </article>
+      <article id="project2"></article>
+      <article id="project3"></article>
+      <article id="project4"></article>
+      <article id="project5"></article>
+      </section>
     </section>
 
     <!-- contact -->
     <section class="contactSection">
-      <h2 id="contactTitle">Contact Me</h2>
-      <p id="phoneNum">Phone Number: 123456789</p>
-      <a id="emailAdd">Email: nico@websitewow.com</a>
+        <h2 id="contactTitle">Contact Me</h2>
+        <div id="contactList">
+        <ul>
+        <li><p id="phoneNum">Phone Number: +44 074734734 </p>
+        </li>
+        <li>
+      <a id="emailAdd" href="nico@websitewow.com"> Email </a>
+      </li>
+      <li>
+        <a id="gitHub" href="https://github.com/Nikola84ca"> GitHub </a>
+        </li>
+        <li>
+          <a id="webSite" href="https://github.com/Nikola84ca"> Website </a>
+          </li>
+      </ul>
+      </div>
     </section>
 
   </main>
-</div>
+
 </body>
 
 </html>
