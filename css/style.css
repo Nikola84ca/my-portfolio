@@ -110,9 +110,29 @@ This is my grid setup for the work section before I opted for a flexbox structur
   
   height: 200px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
+
+#aboutArticle {
+  border-left-style: solid; 
+  border-left-style: solid;
+  width: 50%;
+  margin-left: 20px;
+  color: grey;
+  
+}
+
+#aboutArticle img {
+float: left;
+ width: 100px;
+ flex: wrap;
+ justify-items: flex-start;
+ display: inline;
+ align-self: center;
+ margin: 10px;
+ 
+}
 
 #aboutTitle{
   flex-shrink: 0;
@@ -130,12 +150,9 @@ This is my grid setup for the work section before I opted for a flexbox structur
   color: grey;
   font-size: 20px;
   font-style: italic;
-  border-left-style: solid; 
-  display: flex;
-  justify-content: space-between;
-  border-left-style: solid;
-  width: 70%;
-  margin-left: 20px;
+  width: 1000px;
+  margin-left: 30px;
+  padding-right: 50px;
 }
 
 .workSection {
@@ -205,7 +222,7 @@ text-align: end;
 }
 
 #label a,
-#label h5 {
+#label p {
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
@@ -214,7 +231,7 @@ text-align: end;
 
 
 #project1 #label {
-  background-color: rgb(128, 128, 163);
+  background-color: rgb(89, 89, 97);
   padding: 0;
 }
 
