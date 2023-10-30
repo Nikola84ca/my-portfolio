@@ -77,6 +77,7 @@ h1 {
 
 #heroTitle {
   display: flex;
+  color: white;
 flex-shrink: 0;
   font-size:20px;
   margin-top: 180px;
@@ -185,6 +186,7 @@ text-align: end;
   align-items: start;
   margin-left: 20px;
   margin-bottom: 10px;
+  
 }
 
 #project1 {
@@ -415,4 +417,50 @@ text-align: end;
 
 @media only screen and (max-width:550px) {
 
+}
+
+@media screen and (max-width: 767px) {
+
+  
+  h1 {
+
+    font-size: 15px;
+  } 
+
+
+
+#heroTitle {
+  display: center;
+  color: white;
+  font-size:15px;
+  margin-top: 180px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  background-color: rgb(62, 62, 110);
+  opacity: .7;
+  background: linear-gradient(to right, rgba(62, 62, 110), rgba(255, 122, 89,0));
+  text-justify: center;
+}
+
+  .workSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects {
+    flex: 1 0 calc(100% - 20px); /* Full width for mobile */
+  }
+
+  .contactSection {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-top: 500px;
+    
+  }
 }
