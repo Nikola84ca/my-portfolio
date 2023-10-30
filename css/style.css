@@ -412,11 +412,9 @@ text-align: end;
 
 
 
-@media only screen and (max-width:550px) {
 
-}
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
 
   
   h1 {
@@ -440,8 +438,6 @@ text-align: end;
 }
 
 .aboutSection {
-
-  
   height: 500px;
   margin-bottom: 70px;
 }
@@ -462,8 +458,8 @@ text-align: end;
 #aboutTitle{
    
     border-spacing: 10px;
-   
-    padding-left: 150px;
+   margin: 15px;
+
     
   }
 
@@ -480,8 +476,7 @@ text-align: end;
     align-items: center;
   }
 
-
-
+  
   #project1 {
     object-fit: contain;
     height: 320px;
@@ -566,14 +561,13 @@ text-align: end;
     align-items: center;
     align-content: center;
     margin-top: 500px;
-    
+    margin-bottom: 30px;
   }
 
   #contactTitle {
     flex-shrink: 0;
     align-items: center;
     text-align: end;
-    
     }
 
   #contactList {
@@ -581,7 +575,6 @@ text-align: end;
     font-size: 12px;
     justify-content: space-between;
     border-left-style: solid;
-    flex-grow: 2;
     margin-left: 20px;
   }
 
