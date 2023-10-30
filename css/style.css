@@ -125,7 +125,7 @@ This is my grid setup for the work section before I opted for a flexbox structur
 }
 
 #aboutArticle img {
-float: left;
+ float: left;
  width: 100px;
  flex: wrap;
  justify-items: flex-start;
@@ -140,12 +140,9 @@ float: left;
 #aboutTitle{
   text-align:end;
   color: grey;
-  border-collapse: separate;
-  border-spacing: 10px;
-  grid-area: aboutTitle;
-  width:20%;
-  padding-left: 150px;
-  padding-bottom: auto;
+margin-left: 165px;
+
+
 }
 
 #aboutText {
@@ -443,13 +440,39 @@ text-align: end;
 }
 
 .aboutSection {
+
   
-  flex-direction: column;
-  flex-wrap: wrap;
+  height: 500px;
+  margin-bottom: 70px;
+}
+
+
+#aboutArticle {
   
-  height: 200px;
-  width: 30%;
-  margin-bottom: 40px;
+  border-left-style: solid;
+  width: 50%;
+ margin-left: 0;
+  
+}
+
+#aboutArticle img {
+ width: 70px;
+}
+
+#aboutTitle{
+   
+    border-spacing: 10px;
+   
+    padding-left: 150px;
+    
+  }
+
+#aboutText {
+  color: grey;
+  font-size: 20px;
+  width: 330px;
+  margin-left: 30px;
+  padding-right: 50px;
 }
 
   .workSection {
