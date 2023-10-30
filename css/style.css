@@ -130,7 +130,9 @@ float: left;
  justify-items: flex-start;
  display: inline;
  align-self: center;
- margin: 10px;
+ margin-left: 20px;
+ margin-right: 20px;
+ margin-bottom: 10px;
  
 }
 
@@ -219,13 +221,15 @@ text-align: end;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
+  opacity: 0.8;
 }
 
 #label a,
 #label p {
   color: white;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 50px;
   display: block;
 }
 
@@ -240,39 +244,115 @@ text-align: end;
   height: 120px;
   width: 414px;
   background-image: url(images/02-portfolio-2.jpg);
-  background-size: 100%;
+  background-size: cover;
   object-fit: contain;
+  position: relative;
   background-size: 100%;
   margin-top: 10px;
   margin-left: 100px;
 }
 
+
+#project2::before {
+  content: "";
+  position: absolute;
+  width: 414px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  opacity: 1;
+  transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
+  pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+}
+
+#project2:hover::before {
+  opacity: 0; /* When hovering, the overlay becomes transparent */
+}
+
+
+
+
 #project3 {
   object-fit: contain;
   height: 120px;
   width: 414px;
-  background-image: url(images/02-portfolio-3.jpg);
-  background-size: 100%;
+  background-image: url(images/02-run-buddy.jpg);
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
   margin-top: 10px;
   }
+
+  #project3::before {
+    content: "";
+    position: absolute;
+    width: 414px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
+    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+  }
+  
+  #project3:hover::before {
+    opacity: 0; /* When hovering, the overlay becomes transparent */
+  }
+
+
+
 
 #project4 {
   object-fit: contain;
   height: 120px;
   width: 414px;
   background-image: url(images/02-portfolio-1.jpg);
-  background-size: 100%;
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
   margin-top: 10px;
   margin-left: 100px;
   }
+
+  #project4::before {
+    content: "";
+    position: absolute;
+    width: 414px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
+    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+  }
+  
+  #project4:hover::before {
+    opacity: 0; /* When hovering, the overlay becomes transparent */
+  }
+
 
 #project5 {
   object-fit: contain;
   height: 120px;
   width: 414px;
   background-image: url(images/02-portfolio-1.jpg);
+  background-size: cover;
+  object-fit: contain;
+  position: relative;
   background-size: 100%;
   margin-top: 10px;
+  }
+
+  #project5::before {
+    content: "";
+    position: absolute;
+    width: 414px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
+    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+  }
+  
+  #project5:hover::before {
+    opacity: 0; /* When hovering, the overlay becomes transparent */
   }
 
 
