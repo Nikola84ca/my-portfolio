@@ -442,6 +442,16 @@ text-align: end;
   text-justify: center;
 }
 
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  height: 200px;
+  width: 30%;
+  margin-bottom: 40px;
+}
+
   .workSection {
     flex-direction: column;
     align-items: center;
@@ -449,9 +459,24 @@ text-align: end;
 
   .projects {
     flex: 1 0 calc(100% - 20px); /* Full width for mobile */
+    
+   
+  }
+
+  #project1 {
+    object-fit: contain;
+    height: 320px;
+    width: 300px;
+    background-image: url(images/02-portfolio-1.jpg);
+    background-size: cover;
+    position: relative;
+    
+    
+    
   }
 
   .contactSection {
+    
     color: grey;
     display: flex;
     flex-direction: column;
@@ -463,4 +488,21 @@ text-align: end;
     margin-top: 500px;
     
   }
+
+  #contactTitle {
+    flex-shrink: 0;
+    align-items: center;
+    text-align: end;
+    
+    }
+
+  #contactList {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    border-left-style: solid;
+    flex-grow: 2;
+    margin-left: 20px;
+  }
+
 }
