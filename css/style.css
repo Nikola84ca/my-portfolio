@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-
+/* These are the main variable of the main colours used to style the text and backgrounds of the page */
 :root {
   --lightCol: white;
   --darkCol: grey;
@@ -30,6 +30,8 @@ header {
   margin: 0;
 }
 
+/* This is the styling of the Navigation links in the header */
+
 ul {
   list-style: none;
   display: flex;
@@ -47,11 +49,12 @@ ul li {
   text-underline-offset: 5px;
 }
 
-li:first-child {
+li:first-child { /*I set the logo/name of the site as an element of the nav if I will decide to turn it into a link too, this line of code makes sure that it sits on the right, so it divides it from the other links */
 margin-right: auto;
 margin-left: 10px;
 }
 
+/*This defines the banner with the gif animation between the header nav and the main content of the article, speficically, the About Me section */
 .heroBanner {
   display: flex;
   justify-content:last baseline;
@@ -64,15 +67,16 @@ margin-left: 10px;
   background-position: center;
 }
 
-
 h1 {
   color: rgb(247, 241, 241);
 }
 
+/*This styles the cool motto on the gif banner, I added a transparent background color that fades on the right */
+
 #heroTitle {
   display: flex;
   color: rgb(248, 247, 252);
-flex-shrink: 0;
+  flex-shrink: 0;
   font-size:20px;
   margin-top: 180px;
   margin-left: 800px;
@@ -83,6 +87,8 @@ flex-shrink: 0;
   text-justify: center;
 }
 
+
+/*This styles the about me section, I set the first big container and styled the article title, picture and bio with the relative ids*/
 .aboutSection {
   display: flex;
   flex-wrap: wrap;
@@ -130,12 +136,13 @@ margin-left: 165px;
   padding-right: 50px;
 }
 
+/* This is the style for the working section, each element is styled with the relative tag */
+
 .workSection {
   display: flex;
   flex-wrap: wrap;
   height: 400px;
   color: var(--darkCol);
-   
 }
 
 
@@ -148,8 +155,8 @@ margin-left: 165px;
   width: 20%;
 }
 
-
-.projects {
+/* The project class sits on the right side of the work title, and incorporates all the projects */
+.projects { 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -161,6 +168,7 @@ margin-left: 165px;
   
 }
 
+/*This is the project 1, or main project, the one with the biggest picture that sits on top of the other projects. The dimensions are different, bigger than the others */
 #project1 {
   object-fit: contain;
   height: 320px;
@@ -169,9 +177,10 @@ margin-left: 165px;
   background-size: cover;
   position: relative;
   margin-left: 100px;
-  
-  
+   
 }
+/* the following code sets the overlay color and opacity on the project background image */
+
 #project1::before {
   content: "";
   position: absolute;
@@ -189,6 +198,7 @@ margin-left: 165px;
   opacity: 0; /* When hovering, the overlay becomes transparent */
 }
 
+/* these label ids include the Project name and short description */
 #label {
   position: absolute;
   bottom: 0;
@@ -197,6 +207,8 @@ margin-left: 165px;
   padding: 20px;
   opacity: 0.8;
 }
+
+/*The following style the tag's name link and the short descritpion */
 
 #label a,
 #label p {
@@ -207,11 +219,13 @@ margin-left: 165px;
   display: block;
 }
 
-
+/*This styles the background color of the label for project 1 */
 #project1 #label {
   background-color: rgb(89, 89, 97);
   padding: 0;
 }
+
+/*Project 2, 3, 4, 5, have all the same dimensions and labels setup, changes only the position and some margins padding to style them properly */
 
 #project2 {
   height: 120px;
@@ -322,7 +336,7 @@ margin-left: 165px;
     opacity: 0; 
   }
 
-
+/*These style the contact section, its title and the relative links*/
 .contactSection {
   color: var(--darkCol);
   display: flex;
@@ -372,6 +386,7 @@ text-align: end;
   margin-left: 20px;
 }
 
+/*This is the mobile view CSS style, I decided to put the various elements into a column, but still leaving the titles of each section on the left side of the screen. All the projects will sit in a column one on top of the others, yet respecting their order. Project 1, like in the desktop view, is bigger than the others */
 
 @media screen and (max-width: 900px) {
 
