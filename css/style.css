@@ -5,30 +5,26 @@
 }
 
 
+:root {
+  --lightCol: white;
+  --darkCol: grey;
+}
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  
+ 
 }
 
 a{
-  color: rgb(255, 255, 255);
+  color: var(--lightCol);
 }
-
-header a:hover {
-  background-color: #4a4952;
-  
-}
-
-
 
 h1, h3, h4, h5 {
-  color: grey;
+  color: var(--darkCol)
 }
 
-
 header {
-
   width: 100%;
   background-color: rgb(96, 96, 109);
   margin: 0;
@@ -54,9 +50,7 @@ ul li {
 li:first-child {
 margin-right: auto;
 margin-left: 10px;
-
 }
-
 
 .heroBanner {
   display: flex;
@@ -72,12 +66,12 @@ margin-left: 10px;
 
 
 h1 {
-  color: white;
+  color: rgb(247, 241, 241);
 }
 
 #heroTitle {
   display: flex;
-  color: white;
+  color: rgb(248, 247, 252);
 flex-shrink: 0;
   font-size:20px;
   margin-top: 180px;
@@ -89,39 +83,20 @@ flex-shrink: 0;
   text-justify: center;
 }
 
-/*
-This is my grid setup for the work section before I opted for a flexbox structure
-.workSection {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-area: auto;
-  grid-gap: 10px;
-  grid-template-areas: 
-  "workTitle project1 project1"
-  "workTitle project2 project3"
-  "workTitle project4 project5"; 
-}
-*/
-
-
 .aboutSection {
   display: flex;
   flex-wrap: wrap;
-  
   height: 200px;
   width: 100%;
   margin-bottom: 40px;
 }
-
 
 #aboutArticle {
   border-left-style: solid; 
   border-left-style: solid;
   width: 50%;
   margin-left: 20px;
-  color: grey;
-  
+  color: var(--darkCol)
 }
 
 #aboutArticle img {
@@ -139,7 +114,7 @@ This is my grid setup for the work section before I opted for a flexbox structur
 
 #aboutTitle{
   text-align:end;
-  color: grey;
+  color: var(--darkCol);
 margin-left: 165px;
 
 
@@ -147,7 +122,7 @@ margin-left: 165px;
 
 #aboutText {
   flex-shrink: 0;
-  color: grey;
+  color: var(--darkCol);
   font-size: 20px;
   font-style: italic;
   width: 1000px;
@@ -159,18 +134,18 @@ margin-left: 165px;
   display: flex;
   flex-wrap: wrap;
   height: 400px;
-  color: grey;
+  color: var(--darkCol);
    
 }
 
 
 #workTitle {
   flex-shrink: 0;
-align-items: end;
-width: 20%;
-text-align: end;
-  color: grey;
- width: 20%;
+  align-items: end;
+  width: 20%;
+  text-align: end;
+  color: var(--darkCol);
+  width: 20%;
 }
 
 
@@ -204,10 +179,10 @@ text-align: end;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5); 
   opacity: 1;
-  transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
-  pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+  transition: opacity 0.3s ease; /* This adds a transition for smooth visibility change */
+  pointer-events: none; /* Ensures the overlay doesn't interfere with mouse events */
 }
 
 #project1:hover::before {
@@ -225,7 +200,7 @@ text-align: end;
 
 #label a,
 #label p {
-  color: white;
+  color: rgb(241, 239, 239);
   text-decoration: none;
   margin-left: 20px;
   margin-right: 50px;
@@ -239,7 +214,6 @@ text-align: end;
 }
 
 #project2 {
-  
   height: 120px;
   width: 414px;
   background-image: url(images/02-portfolio-2.jpg);
@@ -252,23 +226,20 @@ text-align: end;
 }
 
 
-#project2::before {
+ #project2::before {
   content: "";
   position: absolute;
   width: 414px;
   height: 120px;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5); 
   opacity: 1;
-  transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
-  pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
-}
+  transition: opacity 0.3s ease; /* This adds a transition for smooth visibility change */
+  pointer-events: none; /* This ensures the overlay doesn't interfere with mouse events */
+ }
 
-#project2:hover::before {
+ #project2:hover::before {
   opacity: 0; /* When hovering, the overlay becomes transparent */
-}
-
-
-
+ }
 
 #project3 {
   object-fit: contain;
@@ -286,18 +257,15 @@ text-align: end;
     position: absolute;
     width: 414px;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    background-color: rgba(0, 0, 0, 0.5); 
     opacity: 1;
-    transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
-    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+    transition: opacity 0.3s ease; 
+    pointer-events: none; 
   }
   
   #project3:hover::before {
-    opacity: 0; /* When hovering, the overlay becomes transparent */
+    opacity: 0; 
   }
-
-
-
 
 #project4 {
   object-fit: contain;
@@ -316,14 +284,14 @@ text-align: end;
     position: absolute;
     width: 414px;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    background-color: rgba(0, 0, 0, 0.5); 
     opacity: 1;
-    transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
-    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+    transition: opacity 0.3s ease; 
+    pointer-events: none; 
   }
   
   #project4:hover::before {
-    opacity: 0; /* When hovering, the overlay becomes transparent */
+    opacity: 0; 
   }
 
 
@@ -344,19 +312,19 @@ text-align: end;
     position: absolute;
     width: 414px;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    background-color: rgba(0, 0, 0, 0.5); 
     opacity: 1;
-    transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
-    pointer-events: none; /* Ensure the overlay doesn't interfere with mouse events */
+    transition: opacity 0.3s ease; 
+    pointer-events: none; 
   }
   
   #project5:hover::before {
-    opacity: 0; /* When hovering, the overlay becomes transparent */
+    opacity: 0; 
   }
 
 
 .contactSection {
-  color: grey;
+  color: var(--darkCol);
   display: flex;
   flex-wrap: wrap;
   height: 75px;
@@ -364,12 +332,10 @@ text-align: end;
   align-items: center;
   align-content: center;
   margin-top: 200px;
-  
 }
 
 .contactSection a {
-  color: grey;
-  
+  color: var(--darkCol); 
 }
 
 
@@ -392,41 +358,30 @@ text-align: end;
 
 #phoneNum {
  margin-left: 20px;
-  
 }
 
 #emailAdd {
   margin-left: 20px;
 }
 
-
 #gitHub {
   margin-left: 20px;
-
 }
 
 #webSite {
   margin-left: 20px;
-
 }
-
-
-
 
 
 @media screen and (max-width: 900px) {
 
-  
   h1 {
-
     font-size: 15px;
   } 
 
-
-
 #heroTitle {
   display: center;
-  color: white;
+  color: var(--lightCol);
   font-size:15px;
   margin-top: 180px;
   margin-left: 100px;
@@ -464,7 +419,7 @@ text-align: end;
   }
 
 #aboutText {
-  color: grey;
+  color: var(--darkCol);
   font-size: 20px;
   width: 330px;
   margin-left: 30px;
@@ -481,7 +436,6 @@ text-align: end;
     object-fit: contain;
     height: 320px;
     width: 320px;
-    background-image: url(images/02-portfolio-1.jpg);
     margin-left: 17px;
     background-size: cover;
     position: relative;
@@ -489,36 +443,28 @@ text-align: end;
     
   }
   #project2 {
-    
     height: 120px;
     width: 414px;
-
     margin-left: 17px;
     margin-top: 10px;
     background-size: cover;
     }
 
     #project2::before {
-      
-      width: 318px;
-          
+     width: 318px;
     }
 
-    #project3 {
-    
-      height: 120px;
-      width: 414px;
-  
-      margin-left: 17px;
-      margin-top: 10px;
-      background-size: cover;
-      }
+  #project3 {
+    height: 120px;
+    width: 414px;
+    margin-left: 17px;
+    margin-top: 10px;
+    background-size: cover;
+  }
 
-      #project3::before {
-      
-        width: 318px;
-            
-      }
+  #project3::before {
+    width: 318px;
+  }
 
   #project4 {
     
@@ -552,7 +498,7 @@ text-align: end;
 
   .contactSection {
     
-    color: grey;
+    color: var(--darkCol);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
